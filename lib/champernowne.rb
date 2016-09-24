@@ -5,7 +5,13 @@ class Champernowne
   end
 
   def value
-    1
+    str = ""
+    i = 1
+    while str.length < @digit
+      str << i.to_s
+      i += 1
+    end
+    str[@digit - 1].to_i
   end
 
 end
